@@ -98,7 +98,15 @@ export default function Auth() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-hero p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-hero p-4 gap-8">
+      <div className="text-center space-y-3">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          Connect • Report • Resolve
+        </h1>
+        <p className="text-lg text-muted-foreground">
+          A trusted platform for quick and fair resolutions.
+        </p>
+      </div>
       <Card className="w-full max-w-md shadow-elevated">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
