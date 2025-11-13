@@ -60,6 +60,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       .eq("role", "admin")
       .maybeSingle();
 
+    console.log("Admin check:", { userId, data, error, hasAdmin: !error && data });
+
     if (!error && data) {
       setIsAdmin(true);
     } else {
